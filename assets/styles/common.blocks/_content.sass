@@ -1,0 +1,34 @@
+.content
+  padding: 64px 0 
+  // ELEMENTS
+  +element('item')
+    
+    &:last-child
+      margin-bottom: 0   
+  // MODIFIERS
+  +modifier('')
+
+// MEDIA QUERIES
++hdready
+  .content
+    width: 100vw
+    +centerxy  
+    display: flex
+    justify-content: center
+    align-content: center
+    // ELEMENTS
+    +element('item')
+      text-align: left
+      &:first-child
+        margin-right: 128px
+      
+      &:last-child
+        margin-bottom: 0   
+    // MODIFIERS
+    +modifier('')
+
++fullhd
+  .content
+    +element('item')
+      &:first-child
+        margin-right: 256px

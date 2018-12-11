@@ -1,0 +1,27 @@
+.product-list
+  margin: 64px 32px
+  // ELEMENTS
+  +element('item')
+    margin: 32px 0
+    +modifier('last')
+      margin: 0
+  +element('icon')
+    width: 56px
+    height: 56px
+    margin: auto
+    margin-bottom: 8px
+  +element('heading')
+    color: $dark-grey
+  +element('text')
+    color: $medium-grey
+    font-size: 12px
+  // MODIFIERS
+  +modifier('')
+
+// MEDIA QUERIES
++hdready
+  .product-list
+    +element('heading')
+      font-size: 22px
+    +element('text')
+      font-size: 14px

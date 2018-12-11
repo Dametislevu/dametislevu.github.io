@@ -1,0 +1,24 @@
+.burger-menu-icon
+  line-height: 0px
+  cursor: pointer
+  display: inline-block
+  // ELEMENTS
+  +element('line')
+    width: 18px
+    height: 2px
+    background-color: $white
+    display: block
+    margin-bottom: 4px
+    +modifier('last')
+      margin-bottom: 0
+
+  // MODIFIERS
+  +modifier('')
+    
+
+
+// MEDIA QUERIES
++hdready
+  .burger-menu-icon
+    display: none
+  

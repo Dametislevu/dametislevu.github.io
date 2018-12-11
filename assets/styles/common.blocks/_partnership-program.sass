@@ -1,0 +1,21 @@
+.partnership-program
+  margin: 64px 32px
+  // ELEMENTS
+  +element('heading')
+    color: $dark-grey
+    margin-bottom: 16px
+  +element('text')
+    color: $medium-grey
+    margin-bottom: 16px
+    font-size: 12px
+  // MODIFIERS
+  +modifier('')
+
+// MEDIA QUERIES
++hdready
+  .partnership-program
+    +element('heading')
+      font-size: 22px
+    +element('text')
+      font-size: 14px
+  

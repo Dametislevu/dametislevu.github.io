@@ -1,0 +1,50 @@
+.section
+  position: relative
+  // ELEMENTS
+  +element('heading')
+    color: $dark-grey
+    margin-top: 64px
+
+  // MODIFIERS
+  +modifier('white')
+    background-color: $white
+  +modifier('grey')
+    background-color: $bright-grey
+  +modifier('landing-page')
+    min-height: 100vh
+    &::before
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-image: url("../assets/images/bg.jpg")
+      background-attachment: fixed
+      background-size: cover
+      z-index: -2
+    &::after
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-image: linear-gradient(#fd5c63 0%, #ac2c54 100%)
+      opacity: 0.85
+      z-index: -1
+
+
+// MEDIA QUERIES
++mobile
++hdready
+  .section
+    +element('heading')
+      font-size: 28px
+    +modifier('landing-page')
+      &::after
+        background-image: linear-gradient(to left, #fd5c63 0%, #ac2c54 100%)
++fullhd
+  .section
+    +element('heading')
+      font-size: 36px

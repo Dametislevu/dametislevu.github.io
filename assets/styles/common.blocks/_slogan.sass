@@ -1,0 +1,42 @@
+.slogan
+  // ELEMENTS
+  +element('heading')
+    color: white
+    font-size: 22px
+    margin-bottom: 4px
+  +element('text')
+    color: white
+    font-size: 14px
+  // MODIFIERS
+  +modifier('')
+
+
+// MEDIA QUERIES
++mobile
++tablet
+  .slogan
+    align-self: center
+    // ELEMENTS
+    +element('heading')
+      font-size: 28px
+      margin-bottom: 8px
+    +element('text')
+      color: white
+      font-size: 16px
+    // MODIFIERS
+    +modifier('')
++hdready
+  .slogan
+    +element('heading')
+      display: inline-block
++fullhd
+  .slogan
+    // ELEMENTS
+    +element('heading')
+      font-size: 36px
+      margin-bottom: 12px
+    +element('text')
+      color: white
+      font-size: 18px
+    // MODIFIERS
+    +modifier('')

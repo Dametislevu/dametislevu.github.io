@@ -1,0 +1,49 @@
+// BEM mixins 
+=element($element)
+  &__#{$element}
+    @content
+
+=modifier($modifier)
+  &--#{$modifier}
+    @content
+
+// Tools
+=centerxy()
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+=centerx()
+  left: 50%
+  transform: translate(0, -50%)  
+
+//=hover-darken($color)
+  //&:hover
+    //background-color: darken(#{$color}, 5%)
+
+// Media queries
+=default()
+  @media only screen and (min-width: 320px) 
+    @content
+
+=mobile()
+  @media only screen and (min-width: 375px) 
+    @content
+
+=tablet()
+  @media only screen and (min-width: 768px) 
+    @content
+
+=hdready()
+  @media only screen and (min-width: 1366px) 
+    @content
+
+=fullhd()
+  @media only screen and (min-width: 1920px) 
+    @content
+
+=uhd()
+  @media only screen and (min-width: 2560px) 
+    @content
+  

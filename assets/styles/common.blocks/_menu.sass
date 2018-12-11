@@ -1,0 +1,29 @@
+.menu
+  display: none
+  // ELEMENTS
+  +element('item')
+    display: inline-block
+    margin-right: 16px
+    a
+      transition: text-shadow 150ms ease-in-out
+    a:hover
+      text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.45)
+    +modifier('footer')
+      display: block
+      margin: 4px 0
+      font-size: 12px
+    +modifier('last')
+      margin: 0
+  // MODIFIERS
+  +modifier('footer')
+    display: block
+    margin: 8px 0
+  +modifier('slide-in')
+  +modifier('hidden')
+    display: none
+
+
+// MEDIA QUERIES
++hdready
+  .menu
+    display: block
