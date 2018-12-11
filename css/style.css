@@ -139,6 +139,11 @@ small {
   transition: 150ms ease-in-out;
   margin: 64px 0;
 }
+.cta-button__icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
 .cta-button--blue {
   background: #0084FF;
 }
