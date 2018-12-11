@@ -420,6 +420,11 @@ small {
   width: 20px;
   height: 20px;
 }
+@media only screen and (min-width: 1366px) {
+  .socials__icon--footer {
+    margin: 0 4px;
+  }
+}
 .faq-list {
   margin: 64px 32px;
 }
