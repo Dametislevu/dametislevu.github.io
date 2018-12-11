@@ -21,6 +21,14 @@
 // MEDIA QUERIES
 +hdready
   .product-list
+    display: flex   
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    +element('item')
+      margin-right: 128px
+      &:last-child
+        margin-right: 0
     +element('heading')
       font-size: 22px
     +element('text')
