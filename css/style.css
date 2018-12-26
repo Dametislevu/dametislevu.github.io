@@ -136,19 +136,23 @@ small {
   font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
-  transition: 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
   margin: 64px 0;
-}
-.cta-button__icon {
-  width: 12px;
-  height: 12px;
-  margin-right: 8px;
 }
 .cta-button--blue {
   background: #0084FF;
+  display: inline-flex;
+  align-items: center;
+}
+.cta-button--blue::before {
+  content: url("../assets/images/messenger.svg");
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 .cta-button--blue:hover {
-  background-color: #0077e6;
+  transform: translate(2px, 2px);
 }
 .cta-button--red {
   background: #FD5C63;
@@ -175,6 +179,29 @@ small {
 .navigation {
   display: inline-block;
 }
+.navigation--slide-in {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FD5C63;
+  height: 100vh;
+  width: 80vw;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.45);
+  z-index: 999;
+}
+.navigation--slide-in::before {
+  content: "";
+  display: block;
+  height: 100vh;
+  width: 20vw;
+  position: absolute;
+  left: -20vw;
+  background-color: black;
+  opacity: 0.4;
+}
+
 .burger-menu-icon {
   line-height: 0px;
   cursor: pointer;
@@ -190,6 +217,10 @@ small {
 .burger-menu-icon__line--last {
   margin-bottom: 0;
 }
+.burger-menu-icon--slide-in {
+  margin: 32px;
+}
+
 @media only screen and (min-width: 1366px) {
   .burger-menu-icon {
     display: none;
@@ -289,6 +320,19 @@ small {
 .menu--footer {
   display: block;
   margin: 8px 0;
+}
+.menu--slide-in {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu--slide-in li {
+  display: inline-block;
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+.menu--slide-in li:last-child {
+  margin-bottom: 0;
 }
 .menu--hidden {
   display: none;
@@ -419,11 +463,19 @@ small {
   margin: 8px 0;
   width: 36px;
   height: 36px;
+  transition: transform 150ms ease-in-out;
+}
+.socials__icon--contact:hover {
+  transform: scale(1.1);
 }
 .socials__icon--footer {
   margin: 4px 0;
   width: 20px;
   height: 20px;
+  transition: transform 150ms ease-in-out;
+}
+.socials__icon--footer:hover {
+  transform: scale(1.1);
 }
 @media only screen and (min-width: 1366px) {
   .socials__icon--footer {
