@@ -6,19 +6,24 @@
   font-size: 14px
   font-weight: 700
   color: $white
-  transition: 150ms ease-in-out
+  transition: transform 150ms ease-in-out
   margin: 64px 0
   
   // ELEMENTS
-  +element('icon')
-    width: 12px
-    height: 12px
-    margin-right: 8px
+  +element('')
   // MODIFIERS
   +modifier('blue')
     background: $blue
+    display: inline-flex
+    align-items: center
+    &::before
+      content: url('../assets/images/messenger.svg')
+      display: inline-block
+      width: 18px
+      height: 18px
+      margin-right: 8px
     &:hover
-      background-color: darken($blue, 5%)
+      transform: translate(2px, 2px)
   +modifier('red')
     background: $primary
     margin: 16px 0
