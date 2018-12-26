@@ -1,0 +1,28 @@
+.companies-list
+  padding: 64px 0
+  // ELEMENTS
+  +element('item')
+    height: 65px
+    width: 230px
+    border: 1px solid $medium-grey
+    display: block
+    margin: auto
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+    +modifier('hidden')
+      display: none
+  // MODIFIERS
+  +modifier('')
+
+// MEDIA QUERIES
++hdready
+  .companies-list
+    padding: 64px
+    +element('item')
+      display: inline-block
+      margin: 0 5%
++fullhd
+  .companies-list
+    +element('item')
+      margin: 0 6%

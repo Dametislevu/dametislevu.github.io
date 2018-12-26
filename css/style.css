@@ -136,7 +136,7 @@ small {
   font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
-  transition: transform 150ms ease-in-out;
+  transition: 150ms ease-in-out;
   margin: 64px 0;
 }
 .cta-button--messenger {
@@ -152,14 +152,14 @@ small {
   margin-right: 8px;
 }
 .cta-button--messenger:hover {
-  transform: translate(2px, 2px);
+  background-color: #007ff5;
 }
 .cta-button--primary {
   background: #FD5C63;
   margin: 16px 0;
 }
 .cta-button--primary:hover {
-  background-color: #fd434b;
+  background-color: #fd4d55;
 }
 
 @media only screen and (min-width: 1366px) {
@@ -509,6 +509,37 @@ small {
   }
   .faq-list__text {
     font-size: 14px;
+  }
+}
+.companies-list {
+  padding: 64px 0;
+}
+.companies-list__item {
+  height: 65px;
+  width: 230px;
+  border: 1px solid #999999;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.companies-list__item:last-child {
+  margin-bottom: 0;
+}
+.companies-list__item--hidden {
+  display: none;
+}
+@media only screen and (min-width: 1366px) {
+  .companies-list {
+    padding: 64px;
+  }
+  .companies-list__item {
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .companies-list__item {
+    margin: 0 6%;
   }
 }
 

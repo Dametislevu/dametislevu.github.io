@@ -6,7 +6,7 @@
   font-size: 14px
   font-weight: 700
   color: $white
-  transition: transform 150ms ease-in-out
+  transition: 150ms ease-in-out
   margin: 64px 0
   
   // ELEMENTS
@@ -23,12 +23,12 @@
       height: 18px
       margin-right: 8px
     &:hover
-      transform: translate(2px, 2px)
+      background-color: darken($blue, 2%)
   +modifier('primary')
     background: $primary
     margin: 16px 0
     &:hover
-      background-color: darken($primary, 5%)
+      background-color: darken($primary, 3%)
 
 
 // MEDIA QUERIES
