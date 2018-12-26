@@ -139,26 +139,26 @@ small {
   transition: transform 150ms ease-in-out;
   margin: 64px 0;
 }
-.cta-button--blue {
+.cta-button--messenger {
   background: #0084FF;
   display: inline-flex;
   align-items: center;
 }
-.cta-button--blue::before {
+.cta-button--messenger::before {
   content: url("../assets/images/messenger.svg");
   display: inline-block;
   width: 18px;
   height: 18px;
   margin-right: 8px;
 }
-.cta-button--blue:hover {
+.cta-button--messenger:hover {
   transform: translate(2px, 2px);
 }
-.cta-button--red {
+.cta-button--primary {
   background: #FD5C63;
   margin: 16px 0;
 }
-.cta-button--red:hover {
+.cta-button--primary:hover {
   background-color: #fd434b;
 }
 
