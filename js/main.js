@@ -17,6 +17,11 @@ window.onload = function() {
           navigation.classList.remove('navigation--slide-in');
           menu.classList.remove('menu--slide-in');
         }
+        else if (e.target.classList.contains('burger-menu-icon__line')){
+          burgerMenuIcon.classList.remove('burger-menu-icon--slide-in');
+          navigation.classList.remove('navigation--slide-in');
+          menu.classList.remove('menu--slide-in');
+        }
       }
       else {
         burgerMenuIcon.classList.add('burger-menu-icon--slide-in');
