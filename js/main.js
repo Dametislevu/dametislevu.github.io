@@ -15,6 +15,7 @@ window.onload = function() {
 
   if (window.innerWidth <= 1366){
     navigation.addEventListener("click", mobileMenu, false);
+
     function mobileMenu(e){
       if (menu.classList.contains('menu--slide-in')){
         if (e.target.nodeName == "A"){
