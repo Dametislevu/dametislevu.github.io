@@ -545,7 +545,7 @@ small {
 .companies-list__item {
   height: 65px;
   width: 230px;
-  border: 1px solid #999999;
+  background-color: #e6e6e6;
   display: block;
   margin: auto;
   margin-bottom: 40px;
