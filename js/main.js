@@ -3,8 +3,10 @@ window.onload = function() {
   const navigation = document.getElementById('navigation');
   const menu = document.getElementById('menu');
   const burgerMenuIconItems = burgerMenuIcon.querySelectorAll('.burger-menu-icon__line');
+  const documentBody = document.getElementById('body');
 
   function mobileMenuToggle(){
+    documentBody.classList.toggle('no-scroll');
     burgerMenuIcon.classList.toggle('burger-menu-icon--slide-in');
     navigation.classList.toggle('navigation--slide-in');
     menu.classList.toggle('menu--slide-in');

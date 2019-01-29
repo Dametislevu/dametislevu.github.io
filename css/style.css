@@ -55,6 +55,10 @@ small {
   font-size: 10px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   position: relative;
 }
