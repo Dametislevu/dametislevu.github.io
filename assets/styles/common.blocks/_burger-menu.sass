@@ -11,12 +11,14 @@
     margin-bottom: 4px
     +modifier('last')
       margin-bottom: 0
+    +modifier('slide-in')
+      &:last-child
+        display: none
 
   // MODIFIERS
   +modifier('slide-in')
     margin: 32px
-    //&:last-child
-      //display:none
+    
     
 
 

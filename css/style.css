@@ -220,6 +220,9 @@ small {
 .burger-menu-icon--slide-in {
   margin: 32px;
 }
+.burger-menu-icon--slide-in__line--last {
+  display: none;
+}
 
 @media only screen and (min-width: 1366px) {
   .burger-menu-icon {
@@ -329,7 +332,8 @@ small {
 .menu--slide-in li {
   display: inline-block;
   margin-bottom: 32px;
-  margin-left: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .menu--slide-in li:last-child {
   margin-bottom: 0;
