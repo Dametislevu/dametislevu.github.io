@@ -61,7 +61,7 @@ window.onload = function() {
   linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 
   function anchorLinkHandler(e) {
-    const distanceToTop = el => Math.floor(el.getBoundingClientRect().top)-200;
+    const distanceToTop = el => Math.floor(el.getBoundingClientRect().top)-100;
     e.preventDefault();
     const targetID = this.getAttribute("href");
     const targetAnchor = document.querySelector(targetID);
@@ -77,5 +77,7 @@ window.onload = function() {
             clearInterval(checkIfDone);
         }
     }, 100);
-}
+  }
+
+
 }
