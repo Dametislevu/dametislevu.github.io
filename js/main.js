@@ -56,7 +56,8 @@ window.onload = function() {
     }
   }
 
-  // Smooth Scroll
+  // SMOOTH
+  // SCROLL
   const linksToAnchors = document.querySelectorAll('a[href^="#"]');
   linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 
@@ -79,5 +80,48 @@ window.onload = function() {
     }, 100);
   }
 
+  // PARALLAX
+  // EFFECTS 
+  const categories = document.getElementById('categories');
+  const companies = document.querySelector('.companies-list');
+  const partnershipProgram = document.getElementById('partnership-program');
+  const contact = document.querySelector('.socials');
+  const faq = document.getElementById('faq');
+  (() => {
+    categories.classList.add('parallax');
+    categories.style.transition = "all 500ms ease-in-out";
+    companies.classList.add('parallax');
+    companies.style.transition = "all 500ms ease-in-out"
+    partnershipProgram.classList.add('parallax');
+    partnershipProgram.style.transition = "all 500ms ease-in-out";
+    contact.classList.add('parallax');
+    faq.classList.add('parallax');
+    contact.style.transition = "all 500ms ease-in-out"
+    faq.style.transition = "all 500ms ease-in-out";
+  })(); 
+  window.addEventListener('scroll', e => {
+    const categoriesPosition = categories.getBoundingClientRect();
+    const companiesPosition = companies.getBoundingClientRect();
+    const partnershipProgramPosition = partnershipProgram.getBoundingClientRect();
+    const contactPosition = contact.getBoundingClientRect();
+    const faqPosition = faq.getBoundingClientRect();
 
+    if (window.innerHeight / 1.35 > categoriesPosition.top) {
+      categories.classList.remove('parallax');
+    };
+    if (window.innerHeight / 1.35 > companiesPosition.top) {
+      companies.classList.remove('parallax');
+    };
+    if (window.innerHeight / 1.35 > partnershipProgramPosition.top){
+      partnershipProgram.classList.remove('parallax');
+    };
+    if (window.innerHeight / 1.35 > contactPosition.top) {
+      contact.classList.remove('parallax');
+    };
+    if (window.innerHeight / 1.35 > faqPosition.top){
+      faq.classList.remove('parallax');
+    };
+  });
 }
+
+

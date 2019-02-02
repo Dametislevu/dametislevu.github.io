@@ -59,6 +59,11 @@ small {
   overflow: hidden;
 }
 
+.parallax {
+  opacity: 0;
+  transform: translate(20%, -15%);
+}
+
 .section {
   position: relative;
 }
