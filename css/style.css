@@ -99,6 +99,7 @@ small {
   position: absolute;
   top: 0;
   left: 0;
+  background-image: linear-gradient(#fd5c63 0%, #ac2c54 100%);
   opacity: 0.85;
   z-index: -1;
 }
@@ -553,6 +554,11 @@ small {
   display: block;
   margin: auto;
   margin-bottom: 40px;
+  transition: all 300ms ease-in-out;
+}
+.companies-list__item:hover {
+  background-color: #FD5C63;
+  opacity: 0.3;
 }
 .companies-list__item:last-child {
   margin-bottom: 0;
